@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {margin: 0; padding: 0; text-decoration: none; list-style: none;}
+
+    body {
+        background-color: #ffff99;
+        position: relative;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+
+    a {
+        color:blue;
+        font-weight: bold;
+    }
+    #header-container {
+        background-color: #fff;
+        height: 700px;
+        width: 95%;
+        border-radius: 20px;
+        margin-top: 100px;
+        
+    }
+    header {
+        display: flex;
+        justify-content: center;
+        margin-top: 60px;
+    }
+
+    h1 {
+        font-size: 40px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    p {
+        position: absolute;
+        top: 210px;
+        margin-left: 20px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 200px;
+    }
+
+    #text {
+        font-weight: bold;
+        font-size: 15px;
+        height: 30px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    #email {
+        margin-bottom: 20px;
+        height: 30px;
+        font-size: 15px;
+        font-weight: bold;
+        width: 100%;
+
+    }
+
+    label {
+        font-size: 18px;
+        font-weight: bold;
+        font-family:'Raleway', sans-serif ;
+        margin-left: 42%;
+    }
+    .mensagem {
+        margin-left: 22%;
+    }
+    input {
+        border: 2px solid black;
+        background-color:#f2f2f2;
+    }
+
+    textarea {
+        height: 100px;
+        border: 2px solid black;
+        background-color:#f2f2f2;
+    }
+
+    button {
+        height: 50px;
+        width: 60%;
+        background-color: #ffff80;
+        border: 2px solid black;
+        outline: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 30px;
+        margin-left: 80px;
+    }
+
+    #logo-container {
+        transition: transform 2s;
+        position: relative;
+        
+
+    }
+
+    #logo-container:hover{
+        transform:rotateY(180deg);
+        color: white;
+    }
+
+    .assign {
+        color:none;
+        font-size: 20px;
+        transition: transform 2s;
+        transform: rotateY(180deg);
+        transition: 2.5s;
+        font-weight: bold;
+    }
+
+
+
+    #logo {
+            transition: opacity .5s ease;
+            position: absolute;
+        }
+    #logo:hover {
+            opacity:0;
+   
+    }
+
+
+
+
+
+
+@media (min-width:480px) {
+        textarea {
+            width: 100%;
+        }
+
+        label {
+            margin-left: 43%;
+        }
+
+        .mensagem {
+            margin-left: 28%;
+        }
+        button {
+            width: 60%;
+            margin-left: 20%;
+        }
+        #text{
+            width: 100%;        
+        }
+
+        #email {
+            width:100%;
+
+        }
+        #logo {display: none;}
+}
+
+@media (min-width:768px) {
+            p {
+                width: 70%;
+                margin-left: 10px;
+            }
+
+            label {
+                margin-left:46%
+            }
+            .mensagem {
+                margin-left: 35%;
+            }
+            textarea {
+                width: 50%;
+                margin-left: 25%;
+            }
+            #text{
+                width: 50%;
+                margin-left: 25%;
+            }
+
+            #email {
+                width: 50%;
+                margin-left: 25%;
+            }
+
+            input {
+                width: 50%;
+                margin-left: 25%;
+            }
+            button {
+                width: 50%;
+                margin-left: 25%;
+
+            }
+
+            #logo {
+                display: none;
+            }
+    
+@media (min-width:1280px){
+    
+                #header-container {
+                    width: 50%;
+                    margin-right: 200px;
+                }
+                p {
+                    width: 20%;
+                }
+                label { margin-left: 46%;
+
+                }
+                .mensagem {
+                    margin-left: 38%;
+                }
+
+                #logo-container {
+                    background-color: #000;
+                    height: 700px;
+                    width: 400px;
+                    border-radius: 20px;
+                    position: absolute;
+                    right:180px;
+                    top: 102px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                #logo {
+                    display: block;
+                    width: 100%;
+                }
+    }
+}
